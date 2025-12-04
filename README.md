@@ -85,3 +85,6 @@ SEMANA_DO_ANO – 3.93%
 Conclusão:
 
 O modelo é adequado para apoiar decisões de reposição e planejamento, e pode ser melhorado com Standard Build e novas features sazonais.
+
+O modelo foi treinado em AWS SageMaker Canvas (versão 1) com previsão de 7 dias.
+Build: Quick Build.
