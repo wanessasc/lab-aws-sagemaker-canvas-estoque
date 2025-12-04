@@ -82,6 +82,26 @@ QUANTIDADE_ESTOQUE – 14.78%
 
 SEMANA_DO_ANO – 3.93%
 
+Interpretação das Métricas
+
+As métricas obtidas permitem avaliar o desempenho do modelo de previsão para a janela de 7 dias. O WAPE de 0.420 indica que o erro médio ponderado gira em torno de 42% do valor real, o que é aceitável para cenários em que a série apresenta volatilidade, variações súbitas de vendas ou ausência de fortes padrões sazonais. O MAPE de 1.276 reforça que há variações pontuais mais difíceis de capturar, comuns em séries de demanda instável. O RMSE de 28.700 representa a magnitude média do erro em unidades absolutas, e serve como referência direta para decisões de estoque. Já o MASE de 1.194 mostra que o modelo apresenta desempenho melhor que uma previsão ingênua simples, embora ainda haja espaço para aprimoramento. No geral, o modelo é adequado para previsões de curto prazo, especialmente para apoiar reposição contínua.
+
+Possíveis Melhorias
+
+Algumas estratégias podem elevar a qualidade do modelo nas próximas iterações. Entre elas:
+
+Utilizar o modo Standard Build do SageMaker Canvas, que executa um processo mais completo de modelagem e tende a melhorar métricas em séries complexas.
+
+Expandir o conjunto de features com variáveis temporais adicionais, como feriados, eventos especiais, indicadores sazonais detalhados e ciclos identificados no histórico.
+
+Aumentar o período de dados analisados, incorporando mais histórico para permitir melhor identificação de padrões.
+
+Enriquecer o dataset com informações externas, como tendências de mercado, promoções, disponibilidade de fornecedores ou variáveis macroeconômicas.
+
+Realizar ajustes no pré-processamento, como identificar outliers e revisar padrões de preenchimento de estoque que possam estar distorcendo a série.
+
+Essas melhorias contribuiriam para reduzir erros, capturar melhor a dinâmica temporal da demanda e tornar o modelo mais robusto em cenários reais de tomada de decisão.
+
 Conclusão:
 
 O modelo é adequado para apoiar decisões de reposição e planejamento, e pode ser melhorado com Standard Build e novas features sazonais.
