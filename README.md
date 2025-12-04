@@ -45,3 +45,43 @@ Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda p
 ## 🤔 Dúvidas?
 
 Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+
+---
+
+Previsão de Estoque – Análise do Modelo (por Wanessa Carvalho)
+
+Esta seção foi adicionada como parte da atividade de melhoria de projeto.
+
+Objetivo:
+
+Desenvolver um modelo de previsão de ESTOQUE_FUTURO utilizando AWS SageMaker Canvas.
+
+Resultados do Modelo:
+
+WAPE: 0.420
+
+MAPE: 1.276
+
+RMSE: 28.700
+
+MASE: 1.194
+
+Avg. wQL: 0.274
+
+O modelo atingiu um desempenho consistente para previsão de curto prazo (7 dias).
+
+Variáveis mais importantes:
+
+VENDAS – 22.72%
+
+ESTOQUE_ONTEM – 18.97%
+
+PRECO – 15.31%
+
+QUANTIDADE_ESTOQUE – 14.78%
+
+SEMANA_DO_ANO – 3.93%
+
+Conclusão:
+
+O modelo é adequado para apoiar decisões de reposição e planejamento, e pode ser melhorado com Standard Build e novas features sazonais.
